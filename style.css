@@ -1,0 +1,113 @@
+/* Variables */
+
+:root {
+    --background-color:hsl(225, 100%, 94%);
+    --card-background-color:hsl(225, 100%, 98%);
+    --plan-color:hsl(225, 100%, 96%);
+    --text-color:hsl(224, 23%, 55%);
+    --button-background-color:hsl(245, 75%, 52%);
+    --font-size: 16px;
+}
+
+* {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* main */
+main {
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+/* Card */
+
+.card-img {
+    height: 25vh;
+    width: 25vw;
+    border-radius: 20px 20px 0 0;
+}
+
+.card {
+    height: 55vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background-color);
+    border-radius: 0 0 20px 20px;
+    padding: 15px;
+    box-shadow: hsl(224, 23%, 55%) 0 20px 30px;
+}
+/* Top card */
+section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, p {
+    padding: 0.5em;
+    text-align: center;
+}
+
+p {
+    color: var(--text-color);
+    font-size: var(--font-size);
+}
+
+/* Cartouche */
+.cartouche {
+    display:flex;
+    align-items: center;
+    height: 80px;
+    background-color:var(--plan-color);
+    border-radius: 20px;
+}
+
+.icon{
+    padding: 10px;
+    margin: 10px;
+}
+
+.plan {
+    margin-right: 85px;
+}
+/* Buttons */
+.button{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.Payment {
+    display: flex;
+    height: 40px;
+    background-color:var(--button-background-color);
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size:var(--font-size);
+}
+
+.cancel {
+    margin: 30px;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    height: 2vh;
+    display: flex;
+    background-color: var(--background-color);
+    justify-content: center;
+}
