@@ -78,7 +78,7 @@ p {
 }
 
 .plan {
-    margin-right: 85px;
+    margin-right: 20%;
 }
 /* Buttons */
 .button{
@@ -111,3 +111,15 @@ footer {
     background-color: var(--background-color);
     justify-content: center;
 }
+
+/* Responsive */
+
+@media screen and (min-width: 360px) and (max-width: 600px) {
+    .card, .card-img  {
+        width: 80%;
+    }
+    .plan {
+        margin-right: 5%;
+    }
+}
+
