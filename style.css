@@ -6,6 +6,7 @@
     --plan-color:hsl(225, 100%, 96%);
     --text-color:hsl(224, 23%, 55%);
     --button-background-color:hsl(245, 75%, 52%);
+    --button-active-color:hsl(259, 68%, 58%);
     --font-size: 16px;
 }
 
@@ -37,7 +38,7 @@ main {
 }
 
 .card {
-    height: 55vh;
+    height: 50%;
     width: 25vw;
     display: flex;
     flex-direction: column;
@@ -97,6 +98,7 @@ p {
     justify-content: center;
     text-decoration: none;
     font-size:var(--font-size);
+
 }
 
 .cancel {
@@ -123,3 +125,16 @@ footer {
     }
 }
 
+/* Active state */
+
+.cancel>p:active {
+    color:black;
+}
+
+.Payment:active {
+    background-color:var(--button-active-color);
+}
+
+.change:active {
+    text-decoration: none;
+}
